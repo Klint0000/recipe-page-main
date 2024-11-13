@@ -1,0 +1,166 @@
+:root {
+    --background-color1: hsl(332, 51%, 32%);
+    --background-color2: hsl(328, 39%, 87%);
+    --background-color3: hsl(14, 45%, 36%);
+    --background-color4: hsl(24, 5%, 18%);
+    --background-color5: hsl(30, 8%, 14%);
+    --background-color6: hsl(0, 0%, 100%);
+    --background-color7: hsl(326, 43%, 90%);
+}
+@import url("https://fonts.google.com/specimen/Young+Serif");
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;overflow-x: hidden;
+    background-color: var(--background-color2);  
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal; 
+}
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+div.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color6);
+    border-radius: 10px;
+}
+div.food img {
+    width: 100%;
+}
+img {
+    width: 100px;
+    object-fit: contain;
+    align-self: center;
+}
+h1 {
+    color: var(--background-color3);
+}
+h1.First{
+    color: black;
+    margin-left: 30px;
+    position: relative;
+    left: 0.4%;
+}
+p.an {
+    width: 80%;
+    height: 100px;
+    text-align: justify;
+    margin: 20px 10%;
+}
+div.list {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 30px;
+    background-color: var(--background-color7);
+    border-radius: 10px;
+}
+p.Prep {
+    font-size: 25px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto; 
+    font-style: normal; 
+}
+div.list  p {
+    margin: 20px 0 0 20px;
+    color: var(--background-color1);
+}
+ul li {
+    font-size: 20px;
+    margin: auto;
+    list-style-position: outside;
+    padding: 10px;
+}
+li span {
+    font-weight: bold;
+    color: var(--background-color5);
+}
+h1.in  {
+    margin-left: 3%;
+}
+h1.in  ul {
+    list-style-position: outside;
+    margin: auto 10px;
+}
+div.struction {
+    width: 90%;
+    border: 1px solid rgb(172, 163, 163);
+    border-left: 0;
+    border-right: 0;
+}
+h1.struction {
+    margin-left: 3%;
+}
+div.struction ol {
+    margin-bottom: 30px;
+}
+h1.nutrition {
+    margin-left: 30px;
+}
+h1.nutrition + p {
+    margin: auto 10% auto 30px;
+    padding-bottom: 20px;
+}
+table {
+    width: 90%;
+    margin: auto 10% 10% 30px;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+tr td {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0;
+}
+span {
+    font-weight: bold;
+    color: var(--background-color3);
+}
+.last-child {
+    border-bottom: none;
+}
+
+@media (min-width: 451px) {
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+    }
+    div.container {
+        width: 500px;
+        height: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 20px 0;
+        font-size: 90%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        margin: auto auto auto 30px;
+    }
+    ul li {
+        font-size: 20px;
+        text-align: justify;
+    }
+    tr td {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h1.First {
+        margin-left: 30px;
+        margin-top: 30px;
+        transform: translateX(-60px);
+    }
+}
